@@ -24,9 +24,9 @@ public class RadiogagaMenu {
                 scanner.nextLine();  
                 switch (opcion) {
                     case 1:// opcion para encender radio
-                        radio.SwitchOnOff();
+                        radio.switchOnOff();
                        
-                        if (radio.isON()) {// enciende la radio
+                        if (radio.isOn()) {// enciende la radio
                             System.out.println("Radio encendido.");
 
                             // Submenú para la radio encendida
@@ -63,7 +63,7 @@ public class RadiogagaMenu {
                                     
                                     if (opcionSubMenu == 1) {
                                         System.out.println("Apagando Radio Gaga");
-                                        radio.SwitchOnOff(); // Apaga la radio
+                                        radio.switchOnOff(); // Apaga la radio
                                         break; // Salir del submenú, apagar la radio
                                     } else if (opcionSubMenu == 2) {
                                         System.out.println("Cambiando de emisora");
@@ -71,7 +71,7 @@ public class RadiogagaMenu {
                                         System.out.println("\n La nueva emisora es la número "+ valorStationR );
                                     } else if (opcionSubMenu == 3) {
                                         System.out.println("Cambiando de frecuencia ");
-                                        radio.SwitchAMFM(); // Cambiar de AM a FM/ de FM a AM
+                                        radio.switchAMFM(); // Cambiar de AM a FM/ de FM a AM
                                         if (radio.isAM()== true) {// revisar que frecuencia se esta utilizando 
                                             frecuencia= "AM";
                                         } else {

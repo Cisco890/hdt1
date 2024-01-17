@@ -31,7 +31,7 @@ public class Radiogaga implements IRadio {
        return this.AM;
     }
     
-    public boolean isON() {
+    public boolean isOn() {
         return this.ON;
     }
 
@@ -45,11 +45,11 @@ public class Radiogaga implements IRadio {
     }
     
 
-    public void SwitchOnOff() {
+    public void switchOnOff() {
         this.ON = !this.ON;
     }
 
-    public void SwitchAMFM() {
+    public void switchAMFM() {
         this.AM = !this.AM;
         if(this.AM == true){
             this.station = 530.0;
